@@ -22,7 +22,7 @@
     "moffbar"
   ],
   "author": "Khaled Mowafy",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.45",
     "react": "^18.2.0",
