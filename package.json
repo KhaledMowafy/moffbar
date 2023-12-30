@@ -1,6 +1,6 @@
 {
   "name": "moffbar",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -48,9 +48,13 @@
     "dist"
   ],
   "keywords": [
+    "reactnavbar",
+    "collapsible navbar",
+    "collapsible",
+    "react collapsible navbar",
     "react",
     "typescript",
-    "awesome-project",
+    "navbar",
     "moffbar"
   ],
   "author": "Khaled Mowafy",
