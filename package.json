@@ -1,20 +1,52 @@
 {
   "name": "moffbar",
-  "version": "1.0.0",
+  "version": "3.0.6",
   "description": "",
-  "main": "./dist/esm/index.js",
-  "module": "./dist/esm/index.js",
-"types": "./dist/esm/index.d.ts",
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/KhaledMowafy/moffbar"
-},
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaledMowafy/moffbar"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "treeshake": true,
+    "sourcemap": "inline",
+    "minify": true,
+    "clean": true,
+    "dts": true,
+    "splitting": false,
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "external": [
+      "react"
+    ],
+    "injectStyle": false
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm build:esm && npm build:cjs",
+    "build": "tsup",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "App.css",
+    "dist"
+  ],
   "keywords": [
     "react",
     "typescript",
@@ -24,9 +56,17 @@
   "author": "Khaled Mowafy",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
     "@types/react": "^18.2.45",
+    "babel-cli": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.21.1"
   }
 }
