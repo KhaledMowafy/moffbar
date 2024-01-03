@@ -1,2 +1,2 @@
-import MoffBar from './components/App';
-export { MoffBar }
+import Navigation from './components/Navigation';
+export { Navigation }
