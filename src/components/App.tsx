@@ -18,7 +18,7 @@ interface MyComponentProps {
     closeActive?:string;
   }
 
-const MoffBar = ({ data, bgcolor, textColor, textStroke='black', closeButton='black', closeActive='white' }: MyComponentProps) => {
+const MoffBar = ({ data, bgcolor='black', textColor='white', textStroke='white', closeButton='black', closeActive='white' }: MyComponentProps) => {
     const [isActive, setIsActive] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
