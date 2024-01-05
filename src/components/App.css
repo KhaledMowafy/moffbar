@@ -178,7 +178,10 @@ h1 {
 }
 
 .overlay ul li a {
-  display: block;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-decoration: none;
   overflow: hidden;
