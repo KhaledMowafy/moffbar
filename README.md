@@ -1,3 +1,5 @@
+![moffbar](https://github.com/KhaledMowafy/moffbar/assets/45627560/b6654017-ea0a-43c1-9147-914d403f8ecc)
+
 # Moffbar
 
 MoffBar is a versatile and collapsible navigation bar React component designed for seamless integration into your web applications. With customizable styling options and support for React Router, MoffBar makes it easy to create a sleek and responsive navigation experience.
