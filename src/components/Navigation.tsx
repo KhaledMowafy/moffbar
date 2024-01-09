@@ -42,7 +42,7 @@ function Navigation({
             }
           >
             {children.map((item, index) => (
-              <Route path={`${data[index].link}`} element={item} />
+              <Route path={`${data[index].link}`} element={item}  key={index}/>
             ))}
           </Route>
         </Routes>
